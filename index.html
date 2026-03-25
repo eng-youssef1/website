@@ -452,39 +452,36 @@ I enjoy analyzing security events, solving technical problems, and learning new 
        
         </div>
         </section>
-       
-        
-       <!--==================== CONTACT ME ====================-->
+<!--==================== CONTACT ME ====================-->
 <section class="contact section" id="contact">
     <h2 class="section__title">Contact me</h2>
     <span class="section__subtitle">Get in touch</span>
 
     <div class="contact__container container grid">
+        
+        <!-- LEFT INFO -->
         <div>
             <div class="contact__information">
                 <i class="uil uil-phone-alt contact__icon"></i>
-
                 <div>
                     <h3 class="contact__title">Call me</h3>
-                    <span class="contatc__subtitle">(+20) 01024678432</span>
+                    <span class="contact__subtitle">(+20) 01024678432</span>
                 </div>
             </div>
 
             <div class="contact__information">
                 <i class="uil uil-envelope contact__icon"></i>
-
                 <div>
                     <h3 class="contact__title">E-mail</h3>
-                    <span class="contatc__subtitle">joeyala739@gmail.com</span>
+                    <span class="contact__subtitle">joeyala739@gmail.com</span>
                 </div>
             </div>
 
             <div class="contact__information">
                 <i class="uil uil-map-marker contact__icon"></i>
-
                 <div>
                     <h3 class="contact__title">Location</h3>
-                    <span class="contatc__subtitle">Mansoura_Dikirnes</span>
+                    <span class="contact__subtitle">Mansoura - Dikirnes</span>
                 </div>
             </div>
         </div>
@@ -493,27 +490,57 @@ I enjoy analyzing security events, solving technical problems, and learning new 
         <form action="login.php" method="post" class="contact__form grid">
 
             <div class="contact__inputs grid">
+                
+                <!-- NAME -->
                 <div class="contact__content">
-                    <label class="contact__label">Name</label>
-                    <input type="text" name="name" class="contact__input" required>
+                    <label for="name" class="contact__label">Name</label>
+                    <input 
+                        type="text" 
+                        id="name"
+                        name="name" 
+                        class="contact__input" 
+                        placeholder="Enter your name"
+                        required>
                 </div>
 
+                <!-- EMAIL -->
                 <div class="contact__content">
-                    <label class="contact__label">E-mail</label>
-                    <input type="email" name="email" class="contact__input" required>
+                    <label for="email" class="contact__label">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email"
+                        name="email" 
+                        class="contact__input" 
+                        placeholder="Enter your email"
+                        required>
                 </div>
             </div>
 
+            <!-- SUBJECT -->
             <div class="contact__content">
-                <label class="contact__label">Subject</label>
-                <input type="text" name="subject" class="contact__input" required>
+                <label for="subject" class="contact__label">Subject</label>
+                <input 
+                    type="text" 
+                    id="subject"
+                    name="subject" 
+                    class="contact__input" 
+                    placeholder="Enter subject"
+                    required>
             </div>
 
+            <!-- MESSAGE -->
             <div class="contact__content">
-                <label class="contact__label">Description</label>
-                <textarea name="message" rows="7" class="contact__input" required></textarea>
+                <label for="message" class="contact__label">Description</label>
+                <textarea 
+                    id="message"
+                    name="message" 
+                    rows="7" 
+                    class="contact__input" 
+                    placeholder="Write your message"
+                    required></textarea>
             </div>
 
+            <!-- BUTTON -->
             <div>
                 <button type="submit" class="button button--flex">
                     Send message
@@ -524,7 +551,10 @@ I enjoy analyzing security events, solving technical problems, and learning new 
         </form>
     </div>
 </section>
-    </main>
+
+            
+        
+  </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
