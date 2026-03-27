@@ -1517,30 +1517,3 @@ body.dark-theme .home__blob {
     font-size: 40px;
     cursor: pointer;
 }
-/* 1. الحالة الابتدائية لكل البارات */
-.skills__percentage {
-    height: 5px;
-    border-radius: .25rem;
-    background-color: var(--first-color); /* تأكد من اسم المتغير عندك */
-    display: block;
-    width: 0; /* هيبدأ من صفر */
-    transition: 1.5s all cubic-bezier(1, 0, 0, 1); /* سرعة الحركة وشكلها */
-}
-
-/* 2. لما الـ Class 'animate' ينضاف للقسم، البارات تملأ */
-/* ملحوظة: غير أسماء الكلاسات دي لو عندك مختلفة في الـ CSS الأصلي */
-.animate .skills__ccna { width: 95%; }
-.animate .skills__investigation { width: 92%; }
-.animate .skills__netsec { width: 88%; }
-.animate .skills__siem { width: 97%; }
-.animate .skills__threat { width: 85%; }
-.animate .skills__linux { width: 95%; }
-.animate .skills__win_sec { width: 100%; }
-.animate .skills__sys_atk { width: 91%; }
-
-/* قسم الـ IT Support */
-.animate .skills__it_net { width: 100%; }
-.animate .skills__it_diag { width: 100%; }
-.animate .skills__it_help { width: 100%; }
-.animate .skills__it_trouble { width: 100%; }
-
